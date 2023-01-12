@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/fan_card"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#534B4B"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/computer_image"
+                android:layout_width="129dp"
+                android:layout_height="139dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:srcCompat="@drawable/computer1" />
+
+            <TextView
+                android:id="@+id/computer_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Coputer XY" />
+
+            <TextView
+                android:id="@+id/computer_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/computer_name_text"
+                app:layout_constraintTop_toBottomOf="@+id/computer_name_text"
+                tools:text="599 Euro" />
+
+            <TextView
+                android:id="@+id/computer_description_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/computer_image"
+                app:layout_constraintStart_toStartOf="@+id/computer_price_text"
+                app:layout_constraintTop_toBottomOf="@+id/computer_price_text"
+                tools:text="Ein starker Gaming-PC der Full HD-Klasse mit AMD Ryzen™ 5 Sechskern-Prozessor und Radeon™ RX 6500 XT Grafikkarte." />
+
+            <TextView
+                android:id="@+id/computer_sale_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:rotation="-30"
+                android:text="SALE"
+                android:textColor="#CA1C1C"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.727"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/stern1_image"
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@+id/computer_description_text"
+                app:layout_constraintTop_toBottomOf="@+id/computer_description_text"
+                app:srcCompat="@drawable/pngegg" />
+
+            <ImageView
+                android:id="@+id/stern2_image2"
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@+id/stern1_image"
+                app:layout_constraintTop_toBottomOf="@+id/computer_description_text"
+                app:srcCompat="@drawable/pngegg" />
+
+            <ImageView
+                android:id="@+id/stern3_image"
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@+id/stern2_image2"
+                app:layout_constraintTop_toBottomOf="@+id/computer_description_text"
+                app:srcCompat="@drawable/pngegg" />
+
+            <ImageView
+                android:id="@+id/stern3_image2"
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@+id/stern3_image"
+                app:layout_constraintTop_toBottomOf="@+id/computer_description_text"
+                app:srcCompat="@drawable/pngegg" />
+
+            <ImageView
+                android:id="@+id/stern3_image3"
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toEndOf="@+id/stern3_image2"
+                app:layout_constraintTop_toBottomOf="@+id/computer_description_text"
+                app:srcCompat="@drawable/pngegg" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/sell_button"
+        android:layout_width="171dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E8E8E8"
+        android:text="In den Warenkorb legen"
+        android:textColor="#050505"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/fan_card"
+        app:layout_constraintTop_toBottomOf="@+id/fan_card"
+        app:strokeColor="#DAD9D9"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
